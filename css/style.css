@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
 
 *{
     margin:0;
@@ -7,9 +7,9 @@
 }
 
 body{
-    font-size: .875rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-style: 'Ubuntu';
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'PT Sans Narrow', sans-serif;
     box-sizing: border-box;
     background-color:#f5f5f5;
     color:#515151;    
@@ -39,7 +39,11 @@ a{
     grid-area: content;
     background-color: white;
     padding: 10px;
-    min-height: 380px;
+}
+
+.content p {
+    line-height: 1.5em;
+    margin-bottom: 10px;
 }
 
 .profile {
@@ -73,7 +77,7 @@ a{
     text-transform: uppercase;
 }
 .profile .profile-text {
-    font-size: 13px;
+    font-size: 17px;
     margin: 15px;
     font-style: italic;
     line-height: 1.4em;

@@ -4,6 +4,9 @@ function getPage(page){
         type: "get",
         url: "page/"+page+'.html',
         dataType: "html",
+        beforeSend:function(){
+            $('.content').html('Please wait a second..');
+        },
         success: function (response) {
             if(page === '404'){
                 $('.menu-link a.active').removeClass('active');
@@ -12,6 +15,9 @@ function getPage(page){
             }
             
             $('.content').html(response);
+        },
+        error:function(){
+            $('.content').html('something went wrong..');
         }
     });
 }
