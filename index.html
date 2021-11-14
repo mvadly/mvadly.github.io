@@ -6,8 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="./css/style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: minmax(250px, 300px) 1.5fr;
+            grid-template-areas: 
+                'sidebar content content'
+                'sidebar content content'
+                'footer footer footer';
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+            border:1px solid;
+            padding: 10px;
+        }
+        .content{
+            grid-area: content;
+            border:1px solid;
+        }
+
+        .profile{
+            text-align: center;
+        }
+        .profile > img {
+            width: 100px;
+            border-radius: 100px;
+            padding: 3px;
+            border: 3px solid white;
+        }
+
+        .footer{
+            grid-area: footer;
+            display: grid;
+            place-content: center;
+            border: 1px solid;
+        }
+    
+    @media (max-width: 576px){
+        /* .sidebar{
+            display: none;
+        } */
+
+        .container{
+            display: grid;
+            grid-template-columns: unset;
+            grid-template-areas: 
+                'sidebar sidebar sidebar'
+                'content content content'
+                'footer footer footer';
+        }
+    }
+    </style>
 </head>
 <body>
-    <h1>Hello Bro</h1>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="img/profil.jpg" alt="img-profile" />
+                <p class="title-profile">Muhammad Fadly</p>
+            </div><hr>
+        </div>
+        <div class="content">Content</div>
+        <footer class="footer">
+            <p>Created By Fadly</p>
+        </footer>
+
+    </div>
 </body>
 </html>
