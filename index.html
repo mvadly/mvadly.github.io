@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Muhammad Fadly's Profile Web</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
                 'footer footer footer';
             
             gap: 10px;
-            margin: 30px;
+            margin: 10px;
         }
 
         .sidebar{
@@ -29,6 +29,7 @@
             grid-area: content;
             background-color: white;
             padding: 10px;
+            min-height: 380px;
         }
 
         .profile{
@@ -36,11 +37,21 @@
             background-color: white;
             padding: 10px;
         }
-        .profile > img {
+        .profile img {
             width: 100px;
             border-radius: 100px;
             padding: 3px;
-            border: 3px solid white;
+            border: 3px solid #515151;
+        }
+        .profile .profile-title {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .profile .profile-text {
+            font-size: 13px;
+            margin: 15px;
+            font-style: italic;
+            line-height: 1.4em;
         }
 
         .footer{
@@ -54,13 +65,22 @@
         .menu{
             background-color: white;
             margin-top: 10px;
-            padding: 10px;
         }
 
         .menu-link {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            text-align: center;
+        }
+
+        .menu-link a {
+            padding: 10px;
+            width: 100%;
+        }
+
+        .menu-link a:hover{
+            background-color: rgba(0,0,0,0.5);
+            color: white;
         }
     
     @media (max-width: 576px){
@@ -78,11 +98,18 @@
             margin: 10px;
         }
 
+        .content{
+            grid-area: content;
+            background-color: white;
+            padding: 10px;
+            min-height:unset;
+        }
+
         .menu-link {
             display: flex;
             flex-direction: row;
-            gap: 20px;
             place-content: center;
+            text-align: center;
         }
     }
     </style>
@@ -92,7 +119,8 @@
         <div class="sidebar">
             <div class="profile">
                 <img src="img/profil.jpg" alt="img-profile" />
-                <p class="title-profile">Muhammad Fadly</p>
+                <h4 class="profile-title">Muhammad Fadly</h4>
+                <p class="profile-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</small>
             </div>
             <nav class="menu">
                 <div class="menu-link">
