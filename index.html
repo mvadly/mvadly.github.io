@@ -8,6 +8,7 @@
     <meta name="author" content="Muhammad Fadly">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Muhammad Fadly's Profile Web</title>
+    <link rel="icon" href="favicon.ico" type="image/ico" />
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +16,43 @@
     <style>
         .menu-link a.active{
             background-color: #fd7001;;
+            color: white;
+            font-weight: 700;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            gap: .7em;
+            place-content: center;
+        }
+
+        button.primary {
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            color: white;
+            background-color: #fd7001;
+            cursor: pointer;
+        }
+
+        button.primary:hover {
+            background-color: #bd5504;
+            font-weight: 700;
+        }
+
+        button.outline-secondary {
+            padding: 7px 20px;
+            border-radius: 25px;
+            color: #515151;
+            border: 3px solid #515151;
+            cursor: pointer;
+            background-color: white;
+        }
+
+        button.outline-secondary:hover {
+            background-color: #515151;;
+            font-weight: 700;
             color: white;
         }
     </style>
@@ -26,14 +64,18 @@
                 <div class="bg-half"></div>
                 <img src="img/profil.jpg" alt="img-profile" />
                 <h4 class="profile-title">Muhammad Fadly</h4>
-                <p class="profile-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</small>
+                <p class="profile-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="buttons">
+                    <button class="primary">Hire Me</button>
+                    <button class="outline-secondary">Download My CV</button>
+                </div>
             </div>
             <nav class="menu">
                 <div class="menu-link">
-                    <a href="#" data-page="home" class="active">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Contact</a>
+                    <a href="javascript:void(0)" data-page="home" class="active">Home</a>
+                    <a href="javascript:void(0)" data-page="about">About</a>
+                    <a href="javascript:void(0)" data-page="portfolio">Portfolio</a>
+                    <a href="javascript:void(0)" data-page="contact">Contact</a>
                 </div>
             </nav>
         </div>
