@@ -13,122 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
     <style>
-        .container{
-            display: grid;
-            grid-template-columns: minmax(250px, 300px) 1.5fr;
-            grid-template-areas: 
-                'sidebar content content'
-                'sidebar content content'
-                'footer footer footer';
-            
-            gap: 10px;
-            margin: 10px;
-        }
-
-        .sidebar{
-            grid-area: sidebar;
-        }
-        .content{
-            grid-area: content;
-            background-color: white;
-            padding: 10px;
-            min-height: 380px;
-        }
-
-        .profile {
-            text-align: center;
-            background-color: white;
-            padding: 10px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .profile .bg-half {
-            background-image: url(img/bg-half.png);
-            height: 90px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0;
-            width: 100%;
-            background-size: 280px;
-        }
-        .profile img {
-            width: 100px;
-            border-radius: 100px;
-            padding: 3px;
-            position: relative;
-            background: white;
-            margin-top: 25px;
-        }
-        .profile .profile-title {
-            font-size: 20px;
-            text-transform: uppercase;
-        }
-        .profile .profile-text {
-            font-size: 13px;
-            margin: 15px;
-            font-style: italic;
-            line-height: 1.4em;
-        }
-
-        .footer{
-            grid-area: footer;
-            background-color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .menu{
-            background-color: white;
-            margin-top: 10px;
-        }
-
-        .menu-link {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .menu-link a {
-            padding: 10px;
-            width: 100%;
-        }
-
-        .menu-link a:hover{
-            background-color: rgba(0,0,0,0.5);
+        .menu-link a.active{
+            background-color: #fd7001;;
             color: white;
         }
-    
-    @media (max-width: 576px){
-        /* .sidebar{
-            display: none;
-        } */
-
-        .container{
-            display: grid;
-            grid-template-columns: unset;
-            grid-template-areas: 
-                'sidebar sidebar sidebar'
-                'content content content'
-                'footer footer footer';
-            margin: 0;
-        }
-
-        .content{
-            grid-area: content;
-            background-color: white;
-            padding: 10px;
-            min-height:unset;
-        }
-
-        .menu-link {
-            display: flex;
-            flex-direction: row;
-            place-content: center;
-            text-align: center;
-        }
-    }
     </style>
 </head>
 <body>
@@ -142,7 +30,7 @@
             </div>
             <nav class="menu">
                 <div class="menu-link">
-                    <a href="#" data-page="home.html">Home</a>
+                    <a href="#" data-page="home" class="active">Home</a>
                     <a href="#">About</a>
                     <a href="#">Portfolio</a>
                     <a href="#">Contact</a>
