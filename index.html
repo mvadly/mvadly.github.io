@@ -32,16 +32,30 @@
             min-height: 380px;
         }
 
-        .profile{
+        .profile {
             text-align: center;
             background-color: white;
             padding: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile .bg-half {
+            background:url(img/bg-half.png);
+            height: 70px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            background-size: 280px;
         }
         .profile img {
             width: 100px;
             border-radius: 100px;
             padding: 3px;
-            border: 3px solid #515151;
+            position: relative;
+            background: white;
         }
         .profile .profile-title {
             font-size: 20px;
@@ -118,6 +132,7 @@
     <div class="container">
         <div class="sidebar">
             <div class="profile">
+                <div class="bg-half"></div>
                 <img src="img/profil.jpg" alt="img-profile" />
                 <h4 class="profile-title">Muhammad Fadly</h4>
                 <p class="profile-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</small>
