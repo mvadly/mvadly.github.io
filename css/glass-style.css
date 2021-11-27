@@ -1,10 +1,19 @@
 body {
-    background: url(https://wallpaperaccess.com/full/2802365.jpg);
+    background-image: url(https://cdn1.katadata.co.id/media/images/temp/2021/10/09/Pemandangan_alam_di_Kepulauan_Widi_Halmahera_Selatan_Maluku_Utara-2021_10_09-07_39_21_9871dd83b80117968b90b37dab478d9f.jpg);
+    color: white !important;
+    background-size: 100%;
+    background-position: center;
+}
+.menu-link a {
     color: white !important;
 }
 
-.menu-link a {
-    color: white !important;
+.menu-link a.active {
+    background-color: rgba(0, 0, 0, 0.71);
+}
+
+.menu-link a:hover {
+    background-color: rgba(0, 0, 0, 0.37);
 }
 
 .content, .footer, .profile, .menu {
