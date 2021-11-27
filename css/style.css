@@ -107,8 +107,61 @@ a{
 }
 
 .menu-link a:hover{
-    background-color: rgba(0,0,0,0.5);
+    background-color: #ff7f1b;
     color: white;
+}
+
+/* Buttons */
+
+.menu-link a.active{
+    background-color: #fd7001;;
+    color: white;
+    font-weight: 700;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: .7em;
+    place-content: center;
+}
+
+button.primary {
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: white;
+    background-color: #fd7001;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+button.primary:hover {
+    background-color: #bd5504;
+    font-weight: 700;
+}
+
+button.outline-secondary {
+    padding: 7px 20px;
+    border-radius: 25px;
+    color: #515151;
+    border: 3px solid #515151;
+    cursor: pointer;
+    background-color: white;
+    font-size: 0.8em;
+}
+
+button.outline-secondary:hover {
+    background-color: #515151;;
+    font-weight: 700;
+    color: white;
+}
+
+#btn-theme-glass{
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+    border: 1px solid;
 }
 
 @media (max-width: 576px){

@@ -32,5 +32,20 @@ $(document).ready(function () {
         let page = $(this).data('page');
         if(page === undefined) page = "404";
         getPage(page);
-    })    
+    })  
+    
+    $('#btn-theme-glass').click(function () {  
+        const link = '<link rel="stylesheet" href="css/glass-style.css" id="glass-class" />';
+        let glass = $('link#glass-class');
+        if(glass.length > 0){
+            glass.remove(); 
+            $(this).html('<i class="fas fa-glass-martini"></i>');
+            return
+        }else{ 
+            $('head').append(link);
+            $(this).html('<i class="fas fa-glass-martini-alt"></i>');
+            return
+        }
+
+    })
 });
