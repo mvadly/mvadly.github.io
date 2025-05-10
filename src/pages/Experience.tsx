@@ -38,16 +38,18 @@ const experiences = [
   
   const Experience = () => {
     return (
-      <div className="bg-slate-500 py-[4rem] px-4 sm:px-32 text-white">
-        <h1 className="text-4xl font-bold mb-4 text-center">Experience</h1>
-        <ul>
+      <div className="bg-slate-800 py-4 px-4 sm:px-32 text-white" >
+        <h1 className="text-4xl font-bold mb-8 text-center" id="experiences">Experience</h1>
+        <ul className="grid sm:grid-cols-2 gap-4">
           {experiences.map((exp, index) => (
-            <li key={index} className="mb-4">
+            <li key={index} className="mb-2 ">
+            <div className="border rgba(255, 255, 255, 0.2) border-b-2 px-3 py-2 rounded-xl">
               <h2 className="text-xl sm:text-2xl font-semibold">{exp.title}</h2>
               <p className="text-sm sm:text-lg">{exp.company}</p>
               <p className="text-sm sm:text-lg italic">{exp.duration}</p>
               <p className="text-sm sm:text-lg">{exp.location}</p>
               <p className="text-sm sm:text-lg">{exp.description}</p>
+              </div>
             </li>
           ))}
         </ul>
