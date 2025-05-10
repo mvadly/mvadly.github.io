@@ -26,7 +26,7 @@ const SectionOne = () => {
                 experience with various technologies and frameworks.
               </p>
             </div>
-            <div className="absolute top-[-20px] right-[20px] sm:top-[-78px] sm:right-[-10px] w-[150px] sm:w-[200px]">
+            <div className="absolute top-[4px] right-[20px] sm:top-[-78px] sm:right-[-10px] w-[130px] sm:w-[200px]">
               <img src={ImageMV} alt="mvadly" className="" />
             </div>
             <div className="px-8 pb-2 sm:py-0 sm:px-2">
