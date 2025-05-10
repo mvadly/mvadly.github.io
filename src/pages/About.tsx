@@ -1,11 +1,11 @@
 const About = () => {
   return (
-    <div className="bg-orange-500 h-screen flex justify-center items-center">
-      <div className="flex flex-col justify-center items-center px-4 text-center">
-        <h1 className="text-4xl font-extrabold text-slate-100 text-center">
+    <div className="bg-orange-500 h-fit sm:h-screen flex justify-center items-center">
+      <div className="flex flex-col justify-center items-center text-center px-4 py-4">
+        <h1 className="text-4xl font-extrabold text-slate-100">
           About Me
         </h1>
-        <div className="text-slate-300 mt-6 text-justify leading-relaxed space-y-6 text-xl sm:mx-32">
+        <div className="text-slate-300 mt-6 text-justify leading-relaxed space-y-6 sm:text-xl sm:mx-32">
           <p className="bg-slate-700 p-4 rounded-lg shadow-lg">
             I am a highly motivated and passionate <strong className="text-orange-300">Backend Developer</strong> with over 5
             years of experience in software development, specializing in <strong className="text-orange-300">Golang,
