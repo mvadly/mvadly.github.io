@@ -1,5 +1,5 @@
 import "./App.css";
-import SectionOne from "./pages/SectionOne";
+import Main from "./templates/Main";
 import Header from "./templates/Header";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <>
       <div className="relative">
         <Header />
-        <SectionOne />
+        <Main />
       </div>
     </>
   );

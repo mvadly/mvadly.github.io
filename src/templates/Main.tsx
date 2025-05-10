@@ -2,11 +2,12 @@ import Bubble from "../components/atom/Bubble";
 import Button from "../components/atom/Button";
 import MVadly from "../components/molecule/MVadly";
 import ImageMV from "../assets/mvdcartoon.png";
+import About from "../pages/About";
 
-const SectionOne = () => {
+const Main = () => {
   return (
-    <div className="w-full sm:h-screen bg-gray-100 sm:flex">
-      <div className="bg-blue-500 w-full">
+    <div className="w-full bg-gray-100 sm:flex">
+      <div className="bg-blue-500 w-full mb-[0px] sm:mb-0">
         <div className="flex justify-center items-center sm:h-screen">
           <div className="relative">
             <div className="flex flex-col justify-center sm:w-[500px] px-8 py-5 sm:py-0 sm:px-2">
@@ -37,13 +38,11 @@ const SectionOne = () => {
           </div>
         </div>
       </div>
-      <div className="bg-orange-500 w-full">
-        {/* <div className="flex justify-center items-center sm:h-screen">
-          <img src={ImageMV} alt="mvadly" className="sm:w-1/2" />
-        </div> */}
+      <div className="w-full sm:overflow-y-hidden h-fit sm:h-screen">
+        <About />
       </div>
     </div>
   );
 };
 
-export default SectionOne;
+export default Main;
