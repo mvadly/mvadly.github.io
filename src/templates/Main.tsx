@@ -3,11 +3,12 @@ import Button from "../components/atom/Button";
 import MVadly from "../components/molecule/MVadly";
 import ImageMV from "../assets/mvdcartoon.png";
 import About from "../pages/About";
+import Experience from "../pages/Experience";
 
 const Main = () => {
   return (
     <div className="w-full block sm:flex">
-      <div className="bg-blue-500 w-full mb-[0] sm:mb-0">
+      <div className="bg-blue-500 w-full sm:w-2/4 pt-[3rem] sm:pt-0">
         <div className="flex justify-center items-center sm:h-screen">
           <div className="relative">
             <div className="flex flex-col justify-center sm:w-[500px] px-8 py-5 sm:py-0 sm:px-2">
@@ -38,8 +39,9 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="w-full sm:overflow-y-hidden h-fit sm:h-screen">
+      <div className="w-full sm:overflow-y-auto h-fit sm:h-screen">
         <About />
+        <Experience />
       </div>
     </div>
   );
