@@ -8,7 +8,7 @@ const Header = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
     return (
-        <div className="py-2 sm:py-5 sticky top-0 bg-black bg-opacity-50 z-50">
+        <div className="py-2 sm:py-5 sticky top-0 bg-slate-800 bg-opacity-50 z-50">
             <div className="container mx-auto">
                 <div className={`flex justify-between items-center`}>
                     <h1 className="px-3 sm:px-0 text-2xl font-bold text-slate-300">@mvadly</h1>

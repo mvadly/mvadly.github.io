@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const Button = (props: ButtonProps) => {
   return (
-    <button className={`bg-${props.color}-500 hover:bg-${props.color}-600 px-5 py-3 w-max rounded-md my-3 cursor-pointer`} onClick={props.onclick} type={props.type || "button"}>{props.children}</button>
+    <button className={`bg-${props.color}-500 hover:bg-${props.color}-600 px-5 py-3 w-max rounded-md my-3 cursor-pointer `} onClick={props.onclick} type={props.type || "button"}>{props.children}</button>
   )
 }
 
