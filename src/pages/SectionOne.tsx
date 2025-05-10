@@ -10,7 +10,7 @@ const SectionOne = () => {
         <div className="flex justify-center items-center sm:h-screen">
           <div className="relative">
             <div className="flex flex-col justify-center sm:w-[500px] px-8 py-5 sm:py-0 sm:px-2">
-              <Bubble textColor="white">it's me</Bubble>
+              <Bubble bgColor="slate" textColor="white">it's me</Bubble>
               <MVadly />
 
               <div className="relative mt-16 sm:mt-20">
