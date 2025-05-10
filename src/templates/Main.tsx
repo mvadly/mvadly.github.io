@@ -6,8 +6,8 @@ import About from "../pages/About";
 
 const Main = () => {
   return (
-    <div className="w-full bg-gray-100 sm:flex">
-      <div className="bg-blue-500 w-full mb-[0px] sm:mb-0">
+    <div className="w-full block sm:flex">
+      <div className="bg-blue-500 w-full mb-[200px] sm:mb-0">
         <div className="flex justify-center items-center sm:h-screen">
           <div className="relative">
             <div className="flex flex-col justify-center sm:w-[500px] px-8 py-5 sm:py-0 sm:px-2">
