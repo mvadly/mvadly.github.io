@@ -5,8 +5,10 @@ import Header from "./templates/Header";
 function App() {
   return (
     <>
-      <Header />
-      <SectionOne />
+      <div className="relative">
+        <Header />
+        <SectionOne />
+      </div>
     </>
   );
 }
